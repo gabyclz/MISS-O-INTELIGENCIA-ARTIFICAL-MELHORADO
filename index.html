@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MISS-O INTELIGÊNCIA | 2049</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <canvas id="particles"></canvas>
+
+    <main class="app">
+
+        <!-- TELA INICIAL -->
+        <section id="start-screen" class="screen active">
+
+            <div class="logo">
+                <span>MISS-O</span>
+                <strong>INTELIGÊNCIA</strong>
+            </div>
+
+            <div class="future-year">PROJETO 2049</div>
+
+            <h1>O futuro precisa de você.</h1>
+
+            <p>
+                Descubra como suas escolhas podem mudar o mundo
+                de 2049.
+            </p>
+
+            <div class="robot">🤖</div>
+
+            <button id="start-btn" class="main-btn">
+                INICIAR MISSÃO 🚀
+            </button>
+
+            <small>Uma experiência interativa sobre tecnologia e futuro.</small>
+
+        </section>
+
+
+        <!-- QUIZ -->
+        <section id="quiz-screen" class="screen">
+
+            <header class="quiz-header">
+
+                <div>
+                    <span id="question-number">PERGUNTA 01</span>
+                    <h2 id="question-title">Carregando...</h2>
+                </div>
+
+                <div class="score-box">
+                    🏆 <span id="score">0</span>
+                </div>
+
+            </header>
+
+            <div class="progress-container">
+                <div id="progress-bar"></div>
+            </div>
+
+            <div class="ai-box">
+                <div class="ai-avatar">🤖</div>
+
+                <div>
+                    <strong>MISS-O IA</strong>
+                    <p id="ai-message">
+                        Olá! Estou pronta para acompanhar suas escolhas.
+                    </p>
+                </div>
+            </div>
+
+            <div id="answers" class="answers"></div>
+
+            <button id="next-btn" class="next-btn" disabled>
+                PRÓXIMA ➜
+            </button>
+
+        </section>
+
+
+        <!-- RESULTADO -->
+        <section id="result-screen" class="screen">
+
+            <div class="result-icon">🌟</div>
+
+            <div class="future-year">
+                MISSÃO CONCLUÍDA
+            </div>
+
+            <h1 id="result-title">Resultado</h1>
+
+            <p id="result-description"></p>
+
+            <div class="final-score">
+                <span>SUA PONTUAÇÃO</span>
+                <strong id="final-score">0</strong>
+            </div>
+
+            <div class="story-box">
+
+                <div class="story-title">
+                    📖 SUA HISTÓRIA EM 2049
+                </div>
+
+                <p id="story"></p>
+
+            </div>
+
+            <button id="restart-btn" class="main-btn">
+                JOGAR NOVAMENTE 🔄
+            </button>
+
+        </section>
+
+    </main>
+
+    <div id="confetti"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
