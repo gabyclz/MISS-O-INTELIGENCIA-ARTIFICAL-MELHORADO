@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Missão IA — descubra que tipo de futuro você ajudaria a construir com a Inteligência Artificial.">
+    <link rel="stylesheet" href="style.css">
+    <title>MISSÃO IA — Você decide o futuro</title>
+</head>
+<body>
+    <main class="caixa-principal">
+
+        <div class="topo">
+            <span class="badge">🤖 MISSÃO IA</span>
+            <span class="contador" id="contador">1 / 10</span>
+        </div>
+
+        <div class="barra-fundo">
+            <div class="barra-progresso" id="barra-progresso"></div>
+        </div>
+
+        <section class="intro" id="intro">
+            <div class="icone">⚡</div>
+
+            <h1>Você decide o futuro da IA</h1>
+
+            <p>
+                O ano é <strong>2026</strong>. A Inteligência Artificial está mudando
+                a escola, o trabalho e a internet. Suas escolhas vão construir
+                uma história diferente para 2049.
+            </p>
+
+            <button class="botao-principal" id="comecar">
+                Começar missão 🚀
+            </button>
+        </section>
+
+        <section class="jogo escondido" id="jogo">
+            <p class="fase" id="fase">MISSÃO 01</p>
+
+            <h2 class="caixa-perguntas"></h2>
+
+            <div class="caixa-alternativas"></div>
+        </section>
+
+        <section class="resultado escondido" id="resultado">
+            <div class="icone">🌎</div>
+
+            <p class="fase">MISSÃO CONCLUÍDA</p>
+
+            <h2 id="titulo-resultado">Em 2049...</h2>
+
+            <p class="texto-resultado"></p>
+
+            <div class="perfil" id="perfil"></div>
+
+            <button class="botao-principal" id="reiniciar">
+                Jogar novamente 🔄
+            </button>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
